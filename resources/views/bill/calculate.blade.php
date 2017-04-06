@@ -24,4 +24,5 @@
         <input class="button" type="submit" value="Calculate"> 
     </form>
     <p>Your total bill is {{ $total }}</p>
+    <p>{{ $service }}</p>
 @endsection

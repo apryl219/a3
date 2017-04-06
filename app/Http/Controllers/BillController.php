@@ -29,6 +29,23 @@ class BillController extends Controller
 				$total,
 				]);
 	}
+	public function service(Request $request) {
+		$service = $request->input('service');
+		
+		if ($service == 'excellent') {
+			return $feedback = 'We are so happy your enjoyed your visit';
+		} 
+		elseif ($service == 'fair'){
+			return $feedback = 'Please let us know what we can do to make your visit better for next time';
+		}
+		else {
+			return $feedback = 'A manager will come speak with you.';
+		}
+			
+			return view('bill.calculate')->with([
+				$feedback,
+				]);
+	}
 
 }
 
