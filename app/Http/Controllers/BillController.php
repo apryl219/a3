@@ -7,6 +7,15 @@ use Illuminate\Http\Request;
 class BillController extends Controller
 {
     public function index() {
-    	return 'Here is your bill total...';
+    	return view('bill.show');
     }
+
+  	public function show($total = null) {
+  		return view('bill.show')->with([
+  			'total' => $total,
+
+  		]);
+  	}
 }
+
+

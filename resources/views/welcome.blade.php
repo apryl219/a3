@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Assignment Three</title>
-<meta charset='utf-8'>
-<link rel="stylesheet" type="text/css" href="a1/a1.css">
+@extends('layouts.master')
 
-<link href="https://fonts.googleapis.com/css?family=Boogaloo|Poiret+One" rel="stylesheet">
-</head>
-<body>
-    <h1>Bill Splitter</h1>
+@section('title')
+    Bill Splitter
+@endsection
+
+@section('content')
     <form method='GET'>
         <label for="people">Split how many ways?</label>
         <input type="text" name="people">
@@ -25,10 +21,6 @@
         <label for="round">Round Up?</label>
         <input type="radio" name="round" value="yes" checked>Yes
         <input type="radio" name="round" value="no">No<br>
-        <input type="submit" value="Calculate"> 
+        <input class="button" type="submit" value="Calculate"> 
     </form>
-    
-    <div>Each person owes: </div>
-    <div></div>
-</body>
-</html>
+@endsection

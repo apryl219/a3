@@ -1,0 +1,17 @@
+body {
+	font-family: 'Poiret One', cursive;
+	text-align: center;
+}
+h1	{
+	font-family: 'Boogaloo', cursive;;
+}
+input {
+	margin-bottom: 1em;
+}
+.button {
+	color: red;
+	font-family: 'Poiret One', cursive;
+}
+.button:hover {
+	color: green;
+}
