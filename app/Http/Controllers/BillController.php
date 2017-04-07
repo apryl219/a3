@@ -24,10 +24,6 @@ class BillController extends Controller
 		else {
 			return $total = round ($tab / $people, 0, PHP_ROUND_HALF_UP);
 		}
-			
-			return view('bill.calculate')->with([
-				$total,
-				]);
 	}
 	public function service(Request $request) {
 		$service = $request->input('service');
@@ -39,12 +35,8 @@ class BillController extends Controller
 			return $feedback = 'Please let us know what we can do to make your visit better for next time';
 		}
 		else {
-			return $feedback = 'A manager will come speak with you.';
+			return $feedback ='A manager will come speak with you.';
 		}
-			
-			return view('bill.calculate')->with([
-				$feedback,
-				]);
 	}
 
 }

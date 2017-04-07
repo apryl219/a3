@@ -23,5 +23,5 @@
         <input type="radio" name="round" value="no">No<br>
         <input class="button" type="submit" value="Calculate"> 
     </form>
-    
+
 @endsection
