@@ -6,13 +6,13 @@
 
 @section('content')
     <form method='GET' action='/calculate'>
-        <label for="people">Split how many ways?</label>
+        <label for="people">Split how many ways? *Required</label>
         <input type="text" name="people">
         <br>
-        <label for="tab">How much was the tab?</label>
+        <label for="tab">How much was the tab? *Required</label>
         <input type="text" name="tab">
         <br>
-        <label for="service">How was the service?</label>
+        <label for="service">How was the service? *Required</label>
             <select name="service" id="">
                 <option value="excellent">Excellent</option>
                 <option value="fair">Fair</option>
